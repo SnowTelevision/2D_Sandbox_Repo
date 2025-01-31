@@ -20,7 +20,18 @@ public class CameraFollow : MonoBehaviour
         Vector3 displacementToSquare = transform.position - square.transform.position; // Calculate the camera's relative position to the square
         displacementToSquare.z = 0;// Make sure the camera only move in the x-y plane
         Vector3 moveDir = displacementToSquare.normalized * -1;// Get the direction for the camera's movement
-        Vector3 movement = moveDir * cameraMoveSpeed * Time.deltaTime; // Get how much the camera should move towards the square in this frame
+        Vector3 movement = new Vector3(); // Create local varible for camera movement vector
+
+        // Make sure we don't over-correct the camera's position
+        if (cameraMoveSpeed * Time.deltaTime < displacementToSquare.magnitude)
+        {
+            movement = moveDir * cameraMoveSpeed * Time.deltaTime; // Get how much the camera should move towards the square in this frame
+        }
+        else
+        {
+            movement = moveDir * displacementToSquare.magnitude;
+        }
+
         transform.position = transform.position + movement; // Move the camera
     }
 }

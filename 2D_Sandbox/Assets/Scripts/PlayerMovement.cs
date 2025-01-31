@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     float moveSpeed = 5f;
     bool isFacingRight = false;
     float jumpPower = 5f;
-    bool isGrounded = false;
+    public bool isGrounded = false;
 
     Rigidbody2D rb;
     Animator animator;
@@ -22,10 +22,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalInput = Input.GetAxis("Horizontal"); // Getting player movement input
+        // Getting player horizontal movement input
+        horizontalInput = Input.GetAxis("Horizontal"); 
 
         FlipSprite(); // Make sure the sprite is facing the movement direction
 
+        // Check if player pressed jump and is on the ground
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
@@ -36,7 +38,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
+        // Apply player horizontal velocity based on the input
+        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y); 
+        // Update animator blend tree parameter
         animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
         animator.SetFloat("yVelocity", rb.velocity.y);
     }
@@ -54,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Update the flag when player character touches the ground
         isGrounded = true;
         animator.SetBool("isJumping", !isGrounded);
     }

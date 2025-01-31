@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e7bcae5862fe12c4fbdad783f72dd632
+guid: 7de2fc8f5ccac18458056c97952c7ef9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Run_0
+      name: Land_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64515aa2736dfc34e9335b55e959da81
-      internalID: 562770209
+      spriteID: 5ae641b03533ec54baa76265bb412faa
+      internalID: -1471904490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_1
+      name: Land_1
       rect:
         serializedVersion: 2
         x: 48
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2865fcbe2f8eed249a1f728e0f7ed7f8
-      internalID: -1930835427
+      spriteID: 3e875f3db533f844b9f18d1d2c63f4c6
+      internalID: -2030364279
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_2
+      name: Land_2
       rect:
         serializedVersion: 2
         x: 96
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8ec0857d67e8684d8ab538e175c07f5
-      internalID: 1075925787
+      spriteID: d4455c4c78b9d47439ba430409eed303
+      internalID: -1406685487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_3
+      name: Land_3
       rect:
         serializedVersion: 2
         x: 144
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb1b2a2b684acfe48ab34c4038db27ae
-      internalID: 774705066
+      spriteID: 2b7ebdf13bce3db40ab8af667a43603f
+      internalID: -2000079450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_4
+      name: Land_4
       rect:
         serializedVersion: 2
         x: 192
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b35d4f47053f63e4aaa3b1534b1aed91
-      internalID: -791363711
+      spriteID: 746629b5db0a54b4c9d2f07f3e32f47e
+      internalID: -1307298647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_5
+      name: Land_5
       rect:
         serializedVersion: 2
         x: 240
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aecb0edb0c62b8f4b9f0b9bbffd32869
-      internalID: 977485778
+      spriteID: 1e4b52637038ca64caf36d973bb9b32c
+      internalID: -9480891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_6
+      name: Land_6
       rect:
         serializedVersion: 2
         x: 288
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da97369a633d46e4394c5151d12714d8
-      internalID: 810202365
+      spriteID: b0f46176bcf1f3d408fee14228e50168
+      internalID: 1333202534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run_7
+      name: Land_7
       rect:
         serializedVersion: 2
         x: 336
@@ -271,8 +271,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 786c2d7b7e859e24ebc9ae5286f5cd27
-      internalID: -828991262
+      spriteID: 1d297bcb7034d0041be2201a427f5549
+      internalID: -1731328989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Land_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27683ede02ae4344ea64e8204ad537b2
+      internalID: -487022472
       vertices: []
       indices: 
       edges: []
@@ -288,14 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Run_0: 562770209
-      Run_1: -1930835427
-      Run_2: 1075925787
-      Run_3: 774705066
-      Run_4: -791363711
-      Run_5: 977485778
-      Run_6: 810202365
-      Run_7: -828991262
+      Land_0: -1471904490
+      Land_1: -2030364279
+      Land_2: -1406685487
+      Land_3: -2000079450
+      Land_4: -1307298647
+      Land_5: -9480891
+      Land_6: 1333202534
+      Land_7: -1731328989
+      Land_8: -487022472
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
