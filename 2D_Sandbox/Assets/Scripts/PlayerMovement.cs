@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         // Getting player horizontal movement input
-        horizontalInput = Input.GetAxis("Horizontal"); 
+        horizontalInput = Input.GetAxis("Horizontal");
 
         FlipSprite(); // Make sure the sprite is facing the movement direction
 
@@ -33,13 +33,16 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpPower);
             isGrounded = false;
             animator.SetBool("isJumping", !isGrounded);
+
+            // Trigger this function when player start jumping
+            JumpEvents.instance.JumpStart();
         }
     }
 
     private void FixedUpdate()
     {
         // Apply player horizontal velocity based on the input
-        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y); 
+        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
         // Update animator blend tree parameter
         animator.SetFloat("xVelocity", Math.Abs(rb.velocity.x));
         animator.SetFloat("yVelocity", rb.velocity.y);
